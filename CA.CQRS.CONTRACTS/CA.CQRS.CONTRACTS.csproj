@@ -12,8 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Responses\" />
-    <Folder Include="Requests\" />
+    <ProjectReference Include="..\CA.CQRS.DOMAIN\CA.CQRS.DOMAIN.csproj" />
   </ItemGroup>
 
 </Project>

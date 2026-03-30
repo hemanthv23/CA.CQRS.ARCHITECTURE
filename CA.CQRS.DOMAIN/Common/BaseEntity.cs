@@ -8,11 +8,10 @@ namespace CA.CQRS.DOMAIN.Common
 {
     public abstract class BaseEntity
     {
-        public int Id { get; set; }
-        public bool IsActive { get; set; }
-        public bool IsDeleted { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public string CreatedBy { get; set; }
+        public bool IsActive { get; set; } = true;       // default true
+        public bool IsDeleted { get; set; } = false;     // default false
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;  // default now
+        public string CreatedBy { get; set; } = string.Empty;
         public DateTime? ModifiedAt { get; set; }
         public string? ModifiedBy { get; set; }
         public DateTime? DeletedAt { get; set; }
