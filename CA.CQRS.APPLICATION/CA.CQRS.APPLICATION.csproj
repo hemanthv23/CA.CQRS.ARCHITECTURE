@@ -18,5 +18,14 @@
     <ProjectReference Include="..\CA.CQRS.CONTRACTS\CA.CQRS.CONTRACTS.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\Wrappers\" />
+    <Folder Include="Features\Example\Commands\" />
+    <Folder Include="Features\Example\Queries\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Behaviours\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="DependencyInjection\" />
+  </ItemGroup>
+
 </Project>
-cls
